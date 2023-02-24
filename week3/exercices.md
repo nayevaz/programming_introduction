@@ -34,3 +34,10 @@ Write a program that takes a number and prints it with its negative number.
 -> Number: 8
 -> 8-8
 ```
+
+# Hour to seconds
+Write a program that takes a number of hours and prints the number of seconds
+````
+-> Hours: 1
+-> Seconds: 3600
+```
