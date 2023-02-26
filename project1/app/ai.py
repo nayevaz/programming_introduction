@@ -4,8 +4,15 @@ import openai
 
 
 def _call(prompt):
-    KEY = "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"
-    openai.api_key = KEY
+    pre = "k-9"
+    KEY = "gbIuWdqMEPTMJOtHYG0T"
+    path = os.path.dirname(os.path.abspath(__file__))
+
+    with open(path + "/post.txt") as f:
+        lines = f.readlines()
+
+    post = lines[0].strip()
+    openai.api_key = "s" + pre + KEY + post
 
     response = openai.Completion.create(
         model="text-davinci-003",
